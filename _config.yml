@@ -19,7 +19,7 @@ title: Albert Anguera's Blog # the main title
 tagline: A blog for programming posts that I found to be relevant # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
- data science, ML, AI, cheminformatics, python
+  data science, ML, AI, cheminformatics, python
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -28,8 +28,8 @@ url: "https://anguera5.github.io"
 github:
   username: anguera5 # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
+linkedin:
+  username: albert-anguera-sempere # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://media.licdn.com/dms/image/v2/D4E03AQHhLB3h7czEUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1702294957790?e=1738195200&v=beta&t=HjgLhXSyLu3QNN2abmtwkwzwidj7tD4U1ldh-LUQQiw
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
