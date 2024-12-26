@@ -11,11 +11,15 @@ Modelling of biodegration halflifes is an endpoint of increasing interest in cur
 
 In this post, I will follow the guidelines provided by [Hafner (et. al.)](https://pubs.acs.org/doi/10.1021/acs.estlett.3c00526) to find good estimates for halflife distributions that are truncated. Those can later be used in modelling pipelines to estimate the output and provide the uncertainty on the prediction.
 
-The dataset that will be used in this post is [EAWAG-SLUDGE](https://envipath.org/package/7932e576-03c7-4106-819d-fe80dc605b8a) extracted on 16th of December 2024 using [enviPath-python](https://github.com/enviPath/enviPath-python) and [PEPPER](https://github.com/FennerLabs/pepper), both of them projects on which I contributed to develop.
+## The dataset
+
+The dataset that will be used in this post is [EAWAG-SLUDGE](https://envipath.org/package/7932e576-03c7-4106-819d-fe80dc605b8a) extracted on 16th of December 2024 using [enviPath-python](https://github.com/enviPath/enviPath-python) and [PEPPER](https://github.com/FennerLabs/pepper), both of them projects on which I contributed to develop. EAWAG-SLUDGE is an data package that contains curated biodegradation pathways from scientific literature where experimental conditions are collected in scenarios (i.e. enviPath webpages containing a table with all the reported experimental conditions). Additionally for some of those scenarios, kinetic values are reported be it through a rate constant or a halflife.
 
 To reduce the amount of requests performed to [enviPath](https://envipath.org), I provide the dataset (here on referred as `data_sludge.tsv`) as a static .tsv file [here](https://docs.google.com/spreadsheets/d/1tzNPpsOJlhmBjJcWgQ5vcqnM8JEzKr8Bt-zh9Ro4pmo/edit?gid=1454238983#gid=1454238983). The main relevant columns of the dataset are:
-* asda
-* asdasd
+* `scenario_id`: The URL to the scenario site
+* `compound_id`: The URL to the compound site
+* `smiles` and `reduced_smiles`: The reported SMILES in enviPath and the one obtained after performing a canonicalization and neutralization steps
+* 
 
 
 ```python
